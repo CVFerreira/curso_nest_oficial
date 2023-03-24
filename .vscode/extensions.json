@@ -1,0 +1,20 @@
+{
+    "recommendations": [
+        "alefragnani.bookmarks",
+        "formulahendry.code-runner",
+        "sldobri.bunker",
+        "ms-azuretools.vscode-docker",
+        "mrmlnc.vscode-duplicate",
+        "usernamehw.errorlens",
+        "dbaeumer.vscode-eslint",
+        "eamodio.gitlens",
+        "ms-vsliveshare.vsliveshare",
+        "pkief.material-icon-theme",
+        "stringham.move-ts",
+        "abhijoybasak.nestjs-files",
+        "esbenp.prettier-vscode",
+        "tabnine.tabnine-vscode",
+        "chakrounanas.turbo-console-log",
+        "pmneo.tsimporter"
+    ]
+}

@@ -1,0 +1,25 @@
+version: "3"
+
+services:
+  db:
+    image: postgres
+    container_name: coffee-db
+    restart: always
+    tty: true
+    ports: 
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=pass123
+      - POSTGRES_DB=coffee
+
+  pgadmin:
+    image: dpage/pgadmin4
+    container_name: cursonestjs-pgadmin
+    tty: true
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=admin@admin.com
+      - PGADMIN_DEFAULT_PASSWORD=admin
+    ports:
+      - "8000:80"
+    depends_on:
+      - db

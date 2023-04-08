@@ -1,4 +1,5 @@
 import { Injectable, NotFoundException } from "@nestjs/common";
+import { ConfigService } from "@nestjs/config";
 import { InjectRepository } from "@nestjs/typeorm";
 import { Event } from "src/events/entities/event.entity";
 import { DataSource, Repository } from "typeorm";
@@ -15,7 +16,8 @@ export class CoffeesService {
     private readonly coffeeRepository: Repository<Coffee>,
     @InjectRepository(Flavor)
     private readonly flavorRepository: Repository<Flavor>,
-    private readonly connection: DataSource
+    private readonly connection: DataSource,
+    private readonly configService: ConfigService
   ) {}
 
   findAll(paginationQuery: PaginationQueryDto) {

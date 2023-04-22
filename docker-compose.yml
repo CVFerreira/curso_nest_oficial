@@ -12,6 +12,17 @@ services:
       - POSTGRES_PASSWORD=pass123
       - POSTGRES_DB=coffee
 
+  test-db:
+    image: postgres
+    container_name: coffee-db-test
+    restart: always
+    tty: true
+    ports: 
+      - "5433:5432"
+    environment:
+      - POSTGRES_PASSWORD=pass123
+      - POSTGRES_DB=coffee
+
   pgadmin:
     image: dpage/pgadmin4
     container_name: cursonestjs-pgadmin

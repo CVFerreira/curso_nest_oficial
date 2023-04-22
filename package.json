@@ -17,7 +17,9 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
+    "pretest:e2e": "docker-compose up -d test-db",
     "test:e2e": "jest --config ./test/jest-e2e.json",
+    "posttest:e2e": "docker-compose stop test-db && docker-compose rm -f test-db",
     "typeorm": "npm run build && npx typeorm -d dist/db/data-source.js",
     "migration:create": "npx typeorm migration:create",
     "migration:run": "npm run typeorm -- migration:run",
@@ -44,7 +46,7 @@
   "devDependencies": {
     "@nestjs/cli": "^9.0.0",
     "@nestjs/schematics": "^9.0.0",
-    "@nestjs/testing": "^9.0.0",
+    "@nestjs/testing": "^9.4.0",
     "@types/express": "^4.17.13",
     "@types/hapi__joi": "^17.1.9",
     "@types/jest": "29.2.4",

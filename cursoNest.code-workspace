@@ -1,0 +1,48 @@
+{
+	"folders": [
+		{
+			"path": "../projetos/curso_nest_oficial"
+		}
+	],
+    "settings": {
+       "editor.fontFamily": "Fira Code",
+        "editor.fontLigatures": true,
+        "git.enableSmartCommit": true,
+        "workbench.iconTheme": "material-icon-theme",
+        "workbench.startupEditor": "none",
+        "editor.fontSize": 13,
+        "terminal.integrated.enableMultiLinePasteWarning": false,
+        "editor.minimap.enabled": false,
+        "explorer.confirmDelete": false,
+        "[javascript]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        "[typescript]": {
+            "editor.defaultFormatter": "esbenp.prettier-vscode"
+        },
+        
+        "editor.formatOnPaste": true,
+        "editor.formatOnSave": true,
+        "git.suggestSmartCommit": false,
+        "git.autofetch": true,
+        "editor.linkedEditing": true,
+        "editor.insertSpaces": true,
+        "editor.detectIndentation": false,
+        "editor.tabSize": 2,
+        "tabnine.experimentalAutoImports": true,
+        "typescript.updateImportsOnFileMove.enabled": "always",
+        "sync.syncExtensions": false,
+        "sync.removeExtensions": false,
+        "sync.forceUpload": true,
+        "gitlens.gitCommands.skipConfirmations": [
+            "fetch:command",
+            "switch:command",
+            "stash-push:command"
+        ],
+        "javascript.updateImportsOnFileMove.enabled": "always",
+        "workbench.colorTheme": "Dobri Next -C05- Electron",
+        "editor.codeActionsOnSave": {  
+            "source.organizeImports": true  
+        }
+    }
+}
